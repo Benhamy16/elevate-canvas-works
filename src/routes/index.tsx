@@ -1,29 +1,46 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { Services } from "@/components/site/Services";
+import { About } from "@/components/site/About";
+import { Why } from "@/components/site/Why";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Hesed Corp — Web Agency, Intranets & Database Architecture" },
+      {
+        name: "description",
+        content:
+          "Hesed Corp is a web agency with 4 years of expertise in custom web development, school intranet platforms, and database architecture.",
+      },
+      { property: "og:title", content: "Hesed Corp — Digital Experiences That Last" },
+      {
+        property: "og:description",
+        content:
+          "Custom websites, school intranet platforms, and database architecture built with craft.",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="bg-white text-ink">
+      <Navbar />
+      <main>
+        <Hero />
+        <Services />
+        <About />
+        <Why />
+        <Contact />
+      </main>
+      <Footer />
+      <Toaster richColors position="top-center" />
     </div>
   );
 }
