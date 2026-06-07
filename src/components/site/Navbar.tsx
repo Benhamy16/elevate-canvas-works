@@ -29,9 +29,7 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 md:h-20 md:px-10">
         <a href="#top" className="flex items-center gap-2">
           <span
-            className={`inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors ${
-              scrolled ? "bg-brand-dark" : "bg-brand-dark"
-            }`}
+            className="inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors bg-brand-dark text-slate-50/0 border-0 border-none"
           >
             <img src={logo.url} alt="Hesed Corp" className="h-7 w-7 object-contain" />
           </span>

@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="bg-white">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-12 md:flex-row md:items-center md:justify-between md:px-10">
         <a href="#top" className="flex items-center gap-2">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-brand-dark">
+          <span className="inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors bg-brand-dark text-slate-50/0 border-0 border-none">
             <img src={logo.url} alt="Hesed Corp" className="h-7 w-7 object-contain" />
           </span>
           <span className="font-serif text-lg font-semibold text-ink">Hesed Corp</span>
