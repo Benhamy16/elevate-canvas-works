@@ -9,6 +9,14 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
+import "@fontsource/open-sauce-sans/400.css";
+import "@fontsource/open-sauce-sans/500.css";
+import "@fontsource/open-sauce-sans/600.css";
+import "@fontsource/open-sauce-sans/700.css";
+import "@fontsource/open-sauce-sans/800.css";
+import "@fontsource/open-sauce-sans/400-italic.css";
+import "@fontsource/open-sauce-sans/500-italic.css";
+
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
@@ -88,12 +96,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap",
-      },
     ],
   }),
   shellComponent: RootShell,
