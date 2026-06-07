@@ -30,7 +30,7 @@ export function Navbar() {
         <a href="#top" className="flex items-center gap-2">
           <span
             className={`inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors ${
-              scrolled ? "bg-[#0b1a3a]" : "bg-[#0b1a3a]"
+              scrolled ? "bg-brand-dark" : "bg-brand-dark"
             }`}
           >
             <img src={logo.url} alt="Hesed Corp" className="h-7 w-7 object-contain" />
