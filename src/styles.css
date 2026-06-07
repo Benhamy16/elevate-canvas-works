@@ -35,8 +35,8 @@
   --color-brand-dark: var(--brand-dark);
   --color-brand-blue: var(--brand-blue);
   --color-brand-cyan: var(--brand-cyan);
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Open Sauce Sans", Georgia, serif;
+  --font-sans: "Open Sauce Sans", system-ui, sans-serif;
 }
 
 :root {
