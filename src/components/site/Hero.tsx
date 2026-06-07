@@ -10,13 +10,13 @@ export function Hero() {
           className="absolute inset-0 opacity-70 animate-mesh"
           style={{
             backgroundImage:
-              "radial-gradient(60% 50% at 20% 30%, rgba(79,70,229,0.18), transparent 60%), radial-gradient(50% 40% at 80% 20%, rgba(99,102,241,0.16), transparent 60%), radial-gradient(60% 50% at 70% 80%, rgba(56,189,248,0.14), transparent 60%)",
+              "radial-gradient(60% 50% at 20% 30%, rgba(48,114,191,0.20), transparent 60%), radial-gradient(50% 40% at 80% 20%, rgba(35,174,230,0.18), transparent 60%), radial-gradient(60% 50% at 70% 80%, rgba(18,37,68,0.14), transparent 60%)",
             backgroundSize: "200% 200%",
           }}
         />
-        <div className="absolute -left-32 top-40 h-[28rem] w-[28rem] rounded-full bg-[#4F46E5]/15 blur-3xl animate-blob" />
+        <div className="absolute -left-32 top-40 h-[28rem] w-[28rem] rounded-full bg-brand-blue/20 blur-3xl animate-blob" />
         <div
-          className="absolute -right-24 bottom-10 h-[22rem] w-[22rem] rounded-full bg-[#7c3aed]/12 blur-3xl animate-blob"
+          className="absolute -right-24 bottom-10 h-[22rem] w-[22rem] rounded-full bg-brand-cyan/20 blur-3xl animate-blob"
           style={{ animationDelay: "-6s" }}
         />
         <svg
