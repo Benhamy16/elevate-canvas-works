@@ -35,7 +35,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="relative overflow-hidden bg-[#111114] py-28 text-white md:py-36">
+    <section id="contact" className="relative overflow-hidden bg-brand-dark py-28 text-white md:py-36">
       <div
         className="pointer-events-none absolute inset-0 opacity-50"
         style={{
@@ -45,7 +45,7 @@ export function Contact() {
       />
       <div className="relative mx-auto grid max-w-6xl gap-16 px-6 md:grid-cols-2 md:px-10 lg:gap-24">
         <div>
-          <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#a5b4fc]">
+          <p className="text-xs font-medium uppercase tracking-[0.22em] text-brand-cyan">
             Let's Talk
           </p>
           <h2 className="mt-4 font-serif text-4xl font-semibold leading-[1.05] tracking-tight md:text-5xl lg:text-6xl">
@@ -80,11 +80,11 @@ export function Contact() {
             <select
               name="service"
               defaultValue="web"
-              className="w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none focus:border-[#a5b4fc]"
+              className="w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none focus:border-brand-cyan"
             >
-              <option className="bg-[#111114]" value="web">Web Development</option>
-              <option className="bg-[#111114]" value="intranet">School Intranet</option>
-              <option className="bg-[#111114]" value="database">Database</option>
+              <option className="bg-brand-dark" value="web">Web Development</option>
+              <option className="bg-brand-dark" value="intranet">School Intranet</option>
+              <option className="bg-brand-dark" value="database">Database</option>
             </select>
           </div>
           <div>
@@ -93,7 +93,7 @@ export function Contact() {
               name="message"
               rows={5}
               placeholder="Tell us about your project…"
-              className="w-full resize-none rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-[#a5b4fc]"
+              className="w-full resize-none rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-brand-cyan"
             />
           </div>
           <button
@@ -121,7 +121,7 @@ function Field({
         name={name}
         type={type}
         placeholder={placeholder}
-        className="w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-[#a5b4fc]"
+        className="w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-brand-cyan"
       />
     </div>
   );

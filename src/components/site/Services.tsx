@@ -44,7 +44,7 @@ export function Services() {
               style={{ transitionDelay: `${i * 90}ms` }}
               className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-white p-8 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_30px_60px_-20px_rgba(15,23,42,0.18)]"
             >
-              <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-[#7c3aed] to-[#38bdf8]" />
+              <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-blue via-brand-cyan to-brand-blue" />
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/8 text-primary">
                 <s.icon className="h-6 w-6" strokeWidth={1.6} />
               </div>
