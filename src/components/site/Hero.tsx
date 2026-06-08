@@ -36,40 +36,40 @@ export function Hero() {
         <div className="mx-auto max-w-4xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-white/70 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-ink-soft backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Hesed Corp · Web Agency
+            Hesed Corp · Agencia Web
           </span>
           <h1 className="mt-8 font-serif text-5xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-6xl md:text-7xl lg:text-[5.5rem]">
-            We Build Digital
+            Construimos
             <br />
-            Experiences{" "}
-            <span className="italic text-primary">That Last</span>
+            Experiencias{" "}
+            <span className="italic text-primary">Digitales</span>
           </h1>
           <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-ink-soft md:text-xl">
-            Web agency with 4 years of expertise in web development, school
-            intranet solutions, and database architecture.
+            Agencia web con 4 años de experiencia en desarrollo web,
+            plataformas intranet escolares y arquitectura de bases de datos.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
               href="#services"
               className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground shadow-[0_10px_30px_-10px_rgba(79,70,229,0.6)] transition-transform hover:-translate-y-0.5"
             >
-              See Our Work →
+              Ver nuestro trabajo →
             </a>
             <a
               href="#contact"
               className="inline-flex items-center justify-center rounded-full border border-ink/20 bg-white/70 px-7 py-3.5 text-sm font-medium text-ink backdrop-blur transition-colors hover:bg-white"
             >
-              Contact Us
+              Contáctanos
             </a>
           </div>
         </div>
 
         <div className="mx-auto mt-16 flex max-w-3xl flex-wrap items-center justify-center gap-x-10 gap-y-4 rounded-2xl border border-border/70 bg-white/70 px-8 py-5 text-sm text-ink-soft backdrop-blur md:mt-20">
-          <span><strong className="text-ink">4+</strong> Years Experience</span>
+          <span><strong className="text-ink">4+</strong> Años de experiencia</span>
           <span className="hidden h-4 w-px bg-border md:inline-block" />
-          <span><strong className="text-ink">50+</strong> Projects Delivered</span>
+          <span><strong className="text-ink">50+</strong> Proyectos entregados</span>
           <span className="hidden h-4 w-px bg-border md:inline-block" />
-          <span><strong className="text-ink">3</strong> Core Services</span>
+          <span><strong className="text-ink">3</strong> Servicios principales</span>
         </div>
       </div>
     </section>
