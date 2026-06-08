@@ -2,10 +2,10 @@ import { Sparkles, Workflow, GraduationCap, LifeBuoy } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 
 const rows = [
-  { icon: Sparkles, title: "Custom solutions, not templates", text: "Every line of code is written for your business. No themes, no copy-paste — just bespoke systems." },
-  { icon: Workflow, title: "End-to-end delivery", text: "From discovery and design to development and deployment, you work with one focused team start to finish." },
-  { icon: GraduationCap, title: "Specialized in education technology", text: "Years of building intranets for schools means we understand faculty workflows and student data deeply." },
-  { icon: LifeBuoy, title: "Ongoing support and maintenance", text: "Launch day is the beginning. We monitor, iterate, and improve long after the site is live." },
+  { icon: Sparkles, title: "Soluciones a medida, no plantillas", text: "Cada línea de código se escribe para tu negocio. Sin temas, sin copiar y pegar: solo sistemas hechos a la medida." },
+  { icon: Workflow, title: "Entrega de principio a fin", text: "Desde el descubrimiento y diseño hasta el desarrollo y despliegue, trabajas con un equipo enfocado de inicio a fin." },
+  { icon: GraduationCap, title: "Especializados en tecnología educativa", text: "Años construyendo intranets para escuelas significan que entendemos los flujos de trabajo de docentes y datos de estudiantes a fondo." },
+  { icon: LifeBuoy, title: "Soporte y mantenimiento continuo", text: "El día del lanzamiento es solo el comienzo. Monitoreamos, iteramos y mejoramos mucho después de que el sitio esté en vivo." },
 ];
 
 export function Why() {
@@ -15,10 +15,10 @@ export function Why() {
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <div className="max-w-2xl" data-reveal>
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-primary">
-            Why Work With Us
+            ¿Por qué trabajar con nosotros?
           </p>
           <h2 className="mt-4 font-serif text-4xl font-semibold tracking-tight text-ink md:text-5xl lg:text-6xl">
-            A studio built on <span className="italic">trust.</span>
+            Un estudio construido sobre la <span className="italic">confianza.</span>
           </h2>
         </div>
 

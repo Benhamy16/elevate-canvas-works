@@ -4,10 +4,10 @@ import { z } from "zod";
 import { toast } from "sonner";
 
 const schema = z.object({
-  name: z.string().trim().min(1, "Name is required").max(100),
-  email: z.string().trim().email("Invalid email").max(255),
+  name: z.string().trim().min(1, "El nombre es obligatorio").max(100),
+  email: z.string().trim().email("Correo inválido").max(255),
   service: z.enum(["web", "intranet", "database"]),
-  message: z.string().trim().min(1, "Message is required").max(1000),
+  message: z.string().trim().min(1, "El mensaje es obligatorio").max(1000),
 });
 
 export function Contact() {
@@ -23,13 +23,13 @@ export function Contact() {
       message: fd.get("message"),
     });
     if (!parsed.success) {
-      toast.error(parsed.error.issues[0]?.message ?? "Please check the form");
+      toast.error(parsed.error.issues[0]?.message ?? "Revisa el formulario");
       return;
     }
     setSubmitting(true);
     setTimeout(() => {
       setSubmitting(false);
-      toast.success("Thanks — we'll get back to you within 24 hours.");
+      toast.success("Gracias — te responderemos en menos de 24 horas.");
       (e.target as HTMLFormElement).reset();
     }, 700);
   };
@@ -46,13 +46,13 @@ export function Contact() {
       <div className="relative mx-auto grid max-w-6xl gap-16 px-6 md:grid-cols-2 md:px-10 lg:gap-24">
         <div>
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-brand-cyan">
-            Let's Talk
+            Hablemos
           </p>
           <h2 className="mt-4 font-serif text-4xl font-semibold leading-[1.05] tracking-tight md:text-5xl lg:text-6xl">
-            Ready to Build <span className="italic">Something Great?</span>
+            ¿Listo para construir <span className="italic">algo grande?</span>
           </h2>
           <p className="mt-6 max-w-md text-[16px] leading-relaxed text-white/70">
-            Let's talk about your project. We'll get back to you within 24 hours.
+            Cuéntanos sobre tu proyecto. Te responderemos en menos de 24 horas.
           </p>
           <div className="mt-10 space-y-3">
             <a href="mailto:hello@hesedcorp.com" className="flex items-center gap-3 text-white/85 transition-colors hover:text-white">
@@ -72,27 +72,27 @@ export function Contact() {
 
         <form onSubmit={onSubmit} className="space-y-4 rounded-2xl bg-white/5 p-6 backdrop-blur md:p-8">
           <div className="grid gap-4 sm:grid-cols-2">
-            <Field name="name" label="Name" placeholder="Your name" />
-            <Field name="email" type="email" label="Email" placeholder="you@company.com" />
+            <Field name="name" label="Nombre" placeholder="Tu nombre" />
+            <Field name="email" type="email" label="Correo" placeholder="tu@empresa.com" />
           </div>
           <div>
-            <label className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-white/60">Service</label>
+            <label className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-white/60">Servicio</label>
             <select
               name="service"
               defaultValue="web"
               className="w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none focus:border-brand-cyan"
             >
-              <option className="bg-brand-dark" value="web">Web Development</option>
-              <option className="bg-brand-dark" value="intranet">School Intranet</option>
-              <option className="bg-brand-dark" value="database">Database</option>
+              <option className="bg-brand-dark" value="web">Desarrollo Web</option>
+              <option className="bg-brand-dark" value="intranet">Intranet Escolar</option>
+              <option className="bg-brand-dark" value="database">Base de Datos</option>
             </select>
           </div>
           <div>
-            <label className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-white/60">Message</label>
+            <label className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-white/60">Mensaje</label>
             <textarea
               name="message"
               rows={5}
-              placeholder="Tell us about your project…"
+              placeholder="Cuéntanos sobre tu proyecto…"
               className="w-full resize-none rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-brand-cyan"
             />
           </div>
@@ -101,7 +101,7 @@ export function Contact() {
             disabled={submitting}
             className="inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5 disabled:opacity-60"
           >
-            {submitting ? "Sending…" : "Send message →"}
+            {submitting ? "Enviando…" : "Enviar mensaje →"}
           </button>
         </form>
       </div>
