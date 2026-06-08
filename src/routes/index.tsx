@@ -11,17 +11,17 @@ import { Toaster } from "@/components/ui/sonner";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hesed Corp — Web Agency, Intranets & Database Architecture" },
+      { title: "Hesed Corp — Agencia Web, Intranets y Arquitectura de Bases de Datos" },
       {
         name: "description",
         content:
-          "Hesed Corp is a web agency with 4 years of expertise in custom web development, school intranet platforms, and database architecture.",
+          "Hesed Corp es una agencia web con 4 años de experiencia en desarrollo web personalizado, plataformas intranet escolares y arquitectura de bases de datos.",
       },
-      { property: "og:title", content: "Hesed Corp — Digital Experiences That Last" },
+      { property: "og:title", content: "Hesed Corp — Experiencias Digitales que Perduran" },
       {
         property: "og:description",
         content:
-          "Custom websites, school intranet platforms, and database architecture built with craft.",
+          "Sitios web personalizados, plataformas intranet escolares y arquitectura de bases de datos construidos con artesanía.",
       },
     ],
   }),
