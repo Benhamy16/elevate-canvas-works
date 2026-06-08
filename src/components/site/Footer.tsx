@@ -12,10 +12,10 @@ export function Footer() {
           <span className="font-serif text-lg font-semibold text-ink">Hesed Corp</span>
         </a>
         <nav className="flex flex-wrap gap-x-7 gap-y-2 text-sm text-ink-soft">
-          <a href="#services" className="hover:text-ink">Services</a>
-          <a href="#about" className="hover:text-ink">About</a>
-          <a href="#why" className="hover:text-ink">Why Us</a>
-          <a href="#contact" className="hover:text-ink">Contact</a>
+          <a href="#services" className="hover:text-ink">Servicios</a>
+          <a href="#about" className="hover:text-ink">Nosotros</a>
+          <a href="#why" className="hover:text-ink">¿Por qué nosotros?</a>
+          <a href="#contact" className="hover:text-ink">Contacto</a>
         </nav>
         <div className="flex items-center gap-3 text-ink-soft">
           <a href="#" aria-label="Twitter" className="rounded-full p-2 transition-colors hover:bg-surface-alt hover:text-ink"><Twitter className="h-4 w-4" /></a>
@@ -25,8 +25,8 @@ export function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-ink-soft md:flex-row md:px-10">
-          <p>© {new Date().getFullYear()} Hesed Corp. All rights reserved.</p>
-          <p className="font-serif italic">Made with precision.</p>
+          <p>© {new Date().getFullYear()} Hesed Corp. Todos los derechos reservados.</p>
+          <p className="font-serif italic">Hecho con precisión.</p>
         </div>
       </div>
     </footer>

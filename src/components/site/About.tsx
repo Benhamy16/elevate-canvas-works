@@ -24,33 +24,33 @@ export function About() {
       <div className="mx-auto grid max-w-7xl gap-16 px-6 md:grid-cols-2 md:px-10 lg:gap-24">
         <div data-reveal>
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-primary">
-            About Hesed Corp
+            Sobre Hesed Corp
           </p>
           <h2 className="mt-4 font-serif text-4xl font-semibold leading-[1.05] tracking-tight text-ink md:text-5xl lg:text-6xl">
-            4 Years Building <span className="italic">the Web.</span>
+            4 Años Construyendo <span className="italic">la Web.</span>
           </h2>
           <div className="mt-8 space-y-5 text-[16px] leading-relaxed text-ink-soft">
             <p>
-              We're a small, deliberate studio. For four years we've shipped
-              websites, intranet platforms, and database systems for clients
-              who care about craft as much as they care about results.
+              Somos un estudio pequeño y deliberado. Durante cuatro años hemos
+              entregado sitios web, plataformas intranet y sistemas de bases de
+              datos para clientes que valoran la artesanía tanto como los resultados.
             </p>
             <p>
-              Our work sits at the intersection of design, engineering, and
-              education technology — a rare combination that lets us serve
-              modern brands and schools with equal precision.
+              Nuestro trabajo se encuentra en la intersección del diseño, la ingeniería
+              y la tecnología educativa: una combinación poco común que nos permite
+              servir a marcas modernas y escuelas con la misma precisión.
             </p>
             <p>
-              Every project is built from scratch. No templates, no shortcuts —
-              only systems designed to outlast trends.
+              Cada proyecto se construye desde cero. Sin plantillas, sin atajos:
+              solo sistemas diseñados para superar las tendencias.
             </p>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-5" data-reveal style={{ transitionDelay: "120ms" }}>
-          <Stat end={4} suffix="+" label="Years of experience" />
-          <Stat end={50} suffix="+" label="Projects completed" />
-          <Stat end={3} suffix="" label="Service specialties" />
-          <Stat end={100} suffix="%" label="Client satisfaction" />
+          <Stat end={4} suffix="+" label="Años de experiencia" />
+          <Stat end={50} suffix="+" label="Proyectos completados" />
+          <Stat end={3} suffix="" label="Especialidades de servicio" />
+          <Stat end={100} suffix="%" label="Satisfacción del cliente" />
         </div>
       </div>
     </section>

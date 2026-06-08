@@ -4,21 +4,21 @@ import { useReveal } from "@/hooks/use-reveal";
 const services = [
   {
     icon: Code2,
-    title: "Custom Websites",
-    desc: "We design and develop fast, scalable, pixel-perfect websites tailored to your brand and business goals.",
-    tag: "Web Development",
+    title: "Sitios Web Personalizados",
+    desc: "Diseñamos y desarrollamos sitios web rápidos, escalables y pixel-perfect adaptados a tu marca y objetivos de negocio.",
+    tag: "Desarrollo Web",
   },
   {
     icon: GraduationCap,
-    title: "School Intranet Platforms",
-    desc: "Complete intranet solutions for educational institutions — student portals, faculty tools, and administrative dashboards.",
-    tag: "Education",
+    title: "Plataformas Intranet Escolares",
+    desc: "Soluciones de intranet completas para instituciones educativas: portales de estudiantes, herramientas para docentes y paneles administrativos.",
+    tag: "Educación",
   },
   {
     icon: Database,
-    title: "Database Architecture",
-    desc: "Robust database design, optimization, and management for businesses that rely on their data.",
-    tag: "Data",
+    title: "Arquitectura de Bases de Datos",
+    desc: "Diseño, optimización y gestión robusta de bases de datos para empresas que dependen de sus datos.",
+    tag: "Datos",
   },
 ];
 
@@ -29,10 +29,10 @@ export function Services() {
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="max-w-2xl" data-reveal>
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-primary">
-            What We Build
+            Lo que construimos
           </p>
           <h2 className="mt-4 font-serif text-4xl font-semibold tracking-tight text-ink md:text-5xl lg:text-6xl">
-            Three crafts. <span className="italic text-ink-soft">One standard.</span>
+            Tres oficios. <span className="italic text-ink-soft">Un estándar.</span>
           </h2>
         </div>
 
@@ -59,7 +59,7 @@ export function Services() {
                 href="#contact"
                 className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-primary"
               >
-                Learn more
+                Saber más
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
             </article>
