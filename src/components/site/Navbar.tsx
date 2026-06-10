@@ -30,7 +30,7 @@ export function Navbar() {
         scrolled ? "bg-brand-dark shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 md:h-20 md:px-10">
+      <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-6 md:h-20 md:px-10">
         <a href="#top" className="flex items-center gap-2">
           <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-brand-dark text-slate-50/0 border-0 border-none">
             <img src={logo.url} alt="Hesed Corp" className="h-7 w-7 object-contain" />
@@ -39,7 +39,7 @@ export function Navbar() {
             Hesed Corp
           </span>
         </a>
-        <nav className="hidden items-center gap-9 md:flex">
+        <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-9 md:flex">
           {links.map((l) => (
             <a
               key={l.href}
