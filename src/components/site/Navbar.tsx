@@ -50,12 +50,6 @@ export function Navbar() {
             </a>
           ))}
         </nav>
-        <a
-          href="#contact"
-          className="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5 md:inline-block"
-        >
-          Inicia un proyecto
-        </a>
         <button
           aria-label="Menu"
           onClick={() => setOpen((v) => !v)}
