@@ -74,13 +74,6 @@ export function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              onClick={() => setOpen(false)}
-              className="mt-2 block rounded-full bg-primary px-5 py-2.5 text-center text-sm font-medium text-primary-foreground"
-            >
-              Inicia un proyecto
-            </a>
           </div>
         </div>
       )}
