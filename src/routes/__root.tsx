@@ -17,6 +17,9 @@ import "@fontsource/open-sauce-sans/800.css";
 import "@fontsource/open-sauce-sans/400-italic.css";
 import "@fontsource/open-sauce-sans/500-italic.css";
 
+import "@fontsource/instrument-serif/400.css";
+import "@fontsource/instrument-serif/400-italic.css";
+
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
